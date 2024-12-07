@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Use an online image for the logo -->
+        
+        <h1>Laptop Management System</h1>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <!-- Admin Dashboard -->
+        <div id="admin-dashboard">
+            <h2>Admin Dashboard</h2>
+            <div class="card">
+                <h3>Total Laptops</h3>
+                <p id="total-laptops">0</p>
+            </div>
+            <div class="card">
+                <h3>Assigned Laptops</h3>
+                <p id="assigned-laptops">0</p>
+            </div>
+            <div class="card">
+                <h3>Available Laptops</h3>
+                <p id="available-laptops">0</p>
+            </div>
+            <div class="card">
+                <h3>Laptops Under Maintenance</h3>
+                <p id="under-maintenance">0</p>
+            </div>
+        </div>
+
+        <!-- Employee Portal -->
+        <div id="employee-portal">
+            <h2>Employee Portal</h2>
+            <h3>Your Assigned Laptop:</h3>
+            <div class="laptop-details">
+                <p id="laptop-details">No laptop assigned.</p>
+            </div>
+
+            <!-- Request a new laptop -->
+            <h3>Request a New Laptop</h3>
+            <form id="laptop-request-form">
+                <label for="laptop-request">Request Laptop:</label>
+                <textarea id="laptop-request" name="request" rows="4" placeholder="Why do you need a new laptop?"></textarea>
+                <button type="submit">Submit Request</button>
+            </form>
+
+            <!-- Report an issue -->
+            <h3>Report an Issue</h3>
+            <form id="issue-report-form">
+                <label for="issue-description">Issue Description:</label>
+                <textarea id="issue-description" name="issue" rows="4" placeholder="Describe the issue"></textarea>
+                <label for="issue-priority">Priority:</label>
+                <select id="issue-priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit">Report Issue</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Laptop Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
